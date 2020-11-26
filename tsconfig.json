@@ -3,7 +3,6 @@
     "target": "ES2019", // ambiente que vou rodar em produção qual o alvo (navegadores aceitam)
     "module": "CommonJS", // requeire and import
     "lib": [
-      "ESNext",
       "DOM"  // i need consolog
     ],
     "outDir": "./dist", // saida do projeto compilado
