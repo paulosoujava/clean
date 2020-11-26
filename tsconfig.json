@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // ambiente que vou rodar em produção qual o alvo (navegadores aceitam)
+    "module": "CommonJS", // requeire and import
+    "lib": [
+      "ESNext",
+      "DOM"  // i need consolog
+    ],
+    "outDir": "./dist", // saida do projeto compilado
+    "rootDir": "./src", // raiz do projeto
+    "removeComments": true, // remover comentarios qndo compilado
+    "noEmitOnError": true, // se tiver erro nao compile
+    "strict": true, // modo mais estrito
+    "esModuleInterop": true, // habilita a interopelabilidade entre o commonjs e o es6 module
+    "skipLibCheck": true, // pula a checkagem de arquivo que sao declaration files ext .d .ts, isso acelera um pouco o build
+    "forceConsistentCasingInFileNames": true // nao permite referencias inconsitentes para nomes de arquivos
+  },
+  //  check somente a pasta src
+  "include": [
+    "./src"
+  ]
+}
